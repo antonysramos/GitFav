@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitFav</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"
+  rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/Estrela.svg" type="image/x-svg">
+
+  <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="logo"><img src="assets/images/Gitfav.svg" alt="Logo"></div>
+
+      <div class="input-wrapper">
+        <label class="sr-only" for="gitname">Digite o Github username que quer favoritar</label>
+        <input type="text" name="gitname" id="gitname" placeholder="GitHub User">
+        <button class="btnFavorite"><span><img src="assets/images/star.svg" alt="star"></span>Favorite</button>
+        <!-- <a class="btnFavorite" href="#"><span><img class="star" src="assets/images/star.svg" alt="star"></span>FAVORITE</a> -->
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Users</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+        <tr>
+          <td class="user">
+            <img src="https://github.com/antonysramos.png" alt="">
+            <a href="https://github.com/antonysramos" target="_blank">
+              <p>Antony Ramos</p>
+              <span>/antonysramos</span>
+            </a>
+          </td>
+          <td class="repositories">17</td>
+          <td class="followers">250</td>
+          <td><button id="remove">Remove</button></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
